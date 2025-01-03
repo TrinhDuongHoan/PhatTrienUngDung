@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e3f1dd;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+            background-color: brown;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #4d804d;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-product {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .image-product img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: contain;
+        }
+
+        .product-price {
+            color: blue;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .product-price s {
+            color: red;
+            margin-right: 5px;
+        }
+
+        .container > .product {
+            border: 3px solid #5f995f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="image-product">
+                <img src="../resources/3/images/Asus.jpg" alt="Asus">
+            </div>
+            <div class="product-price">price: <s>800$</s> 740$</div>
+        </div>
+        <div class="product">
+            <div class="image-product">
+                <img src="../resources/3/images/Asus_4.jpg" alt="Asus_4">
+            </div>
+            <div class="product-price">price: <s>900$</s> 800$</div>
+        </div>
+        <div class="product">
+            <div class="image-product">
+                <img src="../resources/3/images/Asus_3.png" alt="Asus_3">
+            </div>
+            <div class="product-price">price: <s>960$</s> 820$</div>
+        </div>
+        <div class="product">
+            <div class="image-product">
+                <img src="../resources/3/images/Asus_1.jpg" alt="Asus_1">
+            </div>
+            <div class="product-price">price: <s>900$</s> 800$</div>
+        </div>
+        <div class="product">
+            <div class="image-product">
+                <img src="../resources/3/images/Asus_2.jpg" alt="Asus_2">
+            </div>
+            <div class="product-price">price: <s>1000$</s> 930$</div>
+        </div>
+        <div class="product">
+            <div class="image-product">
+                <img src="../resources/3/images/ASUS_i7.jpg" alt="Asus_i7">
+            </div>
+            <div class="product-price">price: <s>1100$</s> 970$</div>
+        </div>
+    </div>
+</body>
+</html>

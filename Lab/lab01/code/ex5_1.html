@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Dell</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        header {
+            width: 100%;
+            height: 250px;
+            text-align: center;
+        }
+
+        header img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .button {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            gap: 5%;
+            background-color: orange;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .button ul {
+            font-size: 20px;
+            font-weight: bold;
+            list-style-type: none;
+            color: white;
+        }
+
+        .block {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            gap: 5px;
+        }
+
+        .block-left {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 70%;
+            height: 600px;
+            margin: auto;
+            background-color: brown;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #4d804d;
+            border-radius: 5px;
+            text-align: center;
+            margin: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-product {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .image-product img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: contain;
+        }
+
+        .product-price {
+            color: blue;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .product-price s {
+            color: red;
+            margin-right: 5px;
+        }
+
+        .block-left>.product {
+            border: 3px solid #5f995f;
+        }
+
+        .block-right {
+            width: 30%;
+            height: 600px;
+            background-color: darkgray;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .new-title {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            background-color: brown;
+        }
+
+        .news{
+            width: 100%;
+            height: 560px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 5px;
+            overflow-y: auto;
+        }
+
+        .new-content {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            gap: 5px;
+        }
+
+        .image-content {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-content img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .content {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            margin-right: 10px;
+            text-align: justify;
+            align-items: center;
+            font-size: 15px;
+        }
+
+        .content p {
+            margin: 0;
+        }
+
+        footer {
+            width: 100%;
+            height: 200px;
+            background-color: darkgray;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../resources/4/images/banner.jpg" alt="banner-laptop-dell">
+    </header>
+    <div class="container">
+        <div class="button">
+            <ul>Home</ul>
+            <ul>About</ul>
+            <ul>Product</ul>
+            <ul>News</ul>
+            <ul>Concat</ul>
+        </div>
+        <div class="block">
+            <div class="block-left">
+                <div class="product">
+                    <div class="image-product">
+                        <img src="../resources/3/images/Asus.jpg" alt="Asus">
+                    </div>
+                    <div class="product-price">price: <s>800$</s> 740$</div>
+                </div>
+                <div class="product">
+                    <div class="image-product">
+                        <img src="../resources/3/images/Asus_4.jpg" alt="Asus_4">
+                    </div>
+                    <div class="product-price">price: <s>900$</s> 800$</div>
+                </div>
+                <div class="product">
+                    <div class="image-product">
+                        <img src="../resources/3/images/Asus_3.png" alt="Asus_3">
+                    </div>
+                    <div class="product-price">price: <s>960$</s> 820$</div>
+                </div>
+                <div class="product">
+                    <div class="image-product">
+                        <img src="../resources/3/images/Asus_1.jpg" alt="Asus_1">
+                    </div>
+                    <div class="product-price">price: <s>900$</s> 800$</div>
+                </div>
+                <div class="product">
+                    <div class="image-product">
+                        <img src="../resources/3/images/Asus_2.jpg" alt="Asus_2">
+                    </div>
+                    <div class="product-price">price: <s>1000$</s> 930$</div>
+                </div>
+                <div class="product">
+                    <div class="image-product">
+                        <img src="../resources/3/images/ASUS_i7.jpg" alt="Asus_i7">
+                    </div>
+                    <div class="product-price">price: <s>1100$</s> 970$</div>
+                </div>
+            </div>
+            <div class="block-right">
+                <div class="new-title">
+                    <h2>News Technology</h2>
+                </div>
+                <div class="news">
+                    <div class="new-content">
+                        <div class="image-content">
+                            <img src="../resources/5/images/oppo f3.png" alt="oppo f3">
+                        </div>
+                        <div class="content">
+                            <p>What do get With 7.5 million buy OPPO F3 users?</p>
+                        </div>
+                    </div>
+                    <div class="new-content">
+                        <div class="image-content">
+                            <img src="../resources/5/images/samsung s8.png" alt="samsung s8">
+                        </div>
+                        <div class="content">
+                            <p>FPT Shop will be offering F-Plus for Galaxy S8 / S8 + customers from in September 2017!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="new-content">
+                        <div class="image-content">
+                            <img src="../resources/5/images/pmh.png" alt="pmh">
+                        </div>
+                        <div class="content">
+                            <p>FPT Shop donates 1,500 coupon 800,000 VND for customers to receive Galaxy S8 on the first
+                                day
+                                of sale on Wednesday, December 3rd, 2017</p>
+                        </div>
+                    </div>
+                    <div class="new-content">
+                        <div class="image-content">
+                            <img src="../resources/5/images/aothung.png" alt="aothung">
+                        </div>
+                        <div class="content">
+                            <p>Come to experience Galaxy S8: just get T-shirt and have chance to hit 8 S8 Plus at FPT
+                                Shop!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="new-content">
+                        <div class="image-content">
+                            <img src="../resources/5/images/dulich.png" alt="dulich">
+                        </div>
+                        <div class="content">
+                            <p>FPT Shop added 8 gifts to the US for Galaxy S8 / S8 Plus reservations</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Conten of footer</p>
+    </footer>
+</body>
+
+</html>

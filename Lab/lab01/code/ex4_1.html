@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Dell</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap : 5px;
+        }
+
+        header{
+            width: 100%;
+            height: 250px;
+            text-align: center;
+        }
+
+        header img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .container{
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            gap : 5px;
+        }
+
+        .button{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            gap : 5%;
+            background-color: orange;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .button ul{
+            font-size : 20px;
+            font-weight: bold;
+            list-style-type: none;
+            color: white;
+        }
+
+        .block{
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            gap : 5px;
+        }
+
+        .block-left{
+            width: 70%;
+            height: 400px;
+            background-color: darkolivegreen;
+            color : white;
+        }
+
+        .block-right{
+            width: 30%;
+            height: 400px;
+            background-color: darkgray;
+            color : white;
+        }
+
+        footer{
+            width: 100%;
+            height: 200px;
+            background-color: darkgray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../resources/4/images/banner.jpg" alt="banner-laptop-dell">
+    </header>
+    <div class = "container">
+        <div class = "button">
+            <ul>Home</ul>
+            <ul>About</ul>
+            <ul>Product</ul>
+            <ul>News</ul>
+            <ul>Concat</ul>
+        </div>
+        <div class = "block">
+            <div class = "block-left">
+                <p>Content of article</p>
+            </div>
+            <div class = "block-right">
+                <p>Conten of aside</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Conten of footer</p>
+    </footer>
+</body>
+</html>
