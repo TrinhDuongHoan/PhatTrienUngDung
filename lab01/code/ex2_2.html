@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo VAIO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 90%;
+            justify-items: center;
+            align-items: center;
+            margin:20px auto;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid blue;
+            align-items: center;
+            justify-items: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .block1 {
+            width: 100%;
+            /* align-items: center;
+            justify-items: center; */
+            display: flex;
+            /* margin-bottom: 20px; */
+        }
+
+        .block-left1 {
+            width: 40%;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .block-right1 {
+            width: 60%;
+            padding: 20px;
+        }
+
+        .block-right1 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .block2 {
+            width: 100%;
+            /* align-items: center;
+            justify-items: center; */
+            display: flex;
+            /* margin-bottom: 20px; */
+        }
+
+        .block-left2 {
+            width: 60%;
+            padding: 20px;
+        }
+
+        .block-left2 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .block-right2{
+            width: 40%;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+
+        p {
+            margin: 0 0 10px;
+        }
+
+        span {
+            color: #0070c0;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="block1">
+            <div class="block-left1">
+                <h1>Transition of VAIO PC business</h1>
+                <p>
+                    On February 6, 2014, Sony made an announcement regarding the reform of its PC business.
+                </p>
+                <p>
+                    <span>Read the press release.</span>
+                </p>
+            </div>
+            <div class="block-right1">
+                <img src="../resources/2/images/sony_vaio_1.jpg" alt="">
+            </div>
+        </div>
+        <div class="block2">
+            <div class="block-left2">
+                <img src="../resources/2/images/sony_vaio_2.jpg" alt="">
+            </div>
+            <div class="block-right2">
+                <h1>Our commitment to VAIO owners</h1>
+                <p>
+                    Though we are discontinuing the sale of PCs, we will continue to offer after-sales support for all Sony branded VAIO PCs in accordance with local laws, regulations and warranty policies.
+                </p>
+                <p>
+                    <span>Learn more.</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
